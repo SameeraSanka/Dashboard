@@ -1,0 +1,36 @@
+<div class="container mt-4">
+  <h2>User Activities</h2>
+
+  <table class="table table-bordered table-striped table-sm">
+    <thead>
+      <tr class="text-center">
+        <th>User ID</th>
+        <th>Activity Title</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let activity of paginatedActivities">
+        <td class="text-center">{{ activity.userId }}</td>
+        <td>{{ activity.title }}</td>
+        <td
+          class="text-white text-center"
+          [ngClass]="activity.completed ? 'bg-success' : 'bg-primary'"
+        >
+          {{ activity.completed ? "Completed" : "Pending" }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <nav aria-label="Page navigation" class="d-flex justify-content-center">
+    <ul class="pagination">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <button class="page-link" (click)="previousPage()"><</button>
+      </li>
+      <li class="page-item" [class.disabled]="currentPage === totalPages">
+        <button class="page-link" (click)="nextPage()">></button>
+      </li>
+    </ul>
+  </nav>
+</div>

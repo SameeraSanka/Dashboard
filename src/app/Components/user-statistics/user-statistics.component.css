@@ -1,0 +1,32 @@
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.total-users-card {
+  background-color: #f0f8ff;
+}
+
+.active-users-card {
+  background-color: #f5fff0;
+}
+
+.location-card {
+  background-color: #fffaf0;
+}
+
+.location-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.location-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+h6 {
+  text-decoration: underline;
+}

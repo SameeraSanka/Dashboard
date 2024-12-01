@@ -1,0 +1,26 @@
+<div class="row g-4">
+  <div class="col-md-4">
+    <div class="card p-3 shadow bg-primary text-white">
+      <h6>Total Users</h6>
+      <h3 class="text-center">{{ totalUsers }}</h3>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card p-3 shadow bg-success text-white">
+      <h6>Active Users</h6>
+      <h3 class="text-center">{{ activeUsers }}</h3>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card p-3 shadow bg-warning text-white">
+      <h6>Users by Location</h6>
+      <div class="row mb-2">
+        <div class="col-md-6" *ngFor="let city of splitCities(usersByLocation)">
+          <p class="text-center">{{ city }}: {{ usersByLocation[city] }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

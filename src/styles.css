@@ -1,1 +1,35 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  .sidebar {
+    background-color: #343a40;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .sidebar a {
+    color: #adb5bd;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  .sidebar a:hover {
+    color: white;
+    background-color: #495057;
+    border-radius: 5px;
+  }
+  .content {
+    padding: 20px;
+  }
+  .card {
+    border: none;
+    border-radius: 8px;
+  }
+  .chart-container {
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+  }
